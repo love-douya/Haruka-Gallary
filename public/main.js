@@ -1,5 +1,3 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
-
 // === Supabase 配置 ===
 const supabaseUrl = 'https://hppsjmveutqmdsuvgrvb.supabase.co'; // 替换为你的
 const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhwcHNqbXZldXRxbWRzdXZncnZiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTEzMDYzNDksImV4cCI6MjA2Njg4MjM0OX0.-tl4hkGnALnLT0UlT7B1ImzMoiM17OFJYHzECKrR8zM'; // 替换为你的

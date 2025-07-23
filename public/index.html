@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
+<head<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>小偶像画廊</title>
   <link rel="stylesheet" href="/styles.css" />
+
+  <!-- 使用 unpkg 稳定加载 Supabase -->
+  <script type="module">
+    import { createClient } from 'https://unpkg.com/@supabase/supabase-js@2.39.7/dist/module/index.js';
+    window.createClient = createClient;
+  </script>
 </head>
 <body>
   <div class="container">
@@ -29,7 +35,12 @@
   </div>
 
   <!-- Supabase JS Client -->
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script type="module">
+  import { createClient } from 'https://unpkg.com/@supabase/supabase-js@2.39.7/dist/module/index.js';
+
+  // 全局暴露 supabase client（供 main.js 使用）
+  window.createClient = createClient;
+</script>
   <script type="module" src="/main.js"></script>
 </body>
 </html>
